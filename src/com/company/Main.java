@@ -6,21 +6,15 @@ import java.util.SortedMap;
 public class Main {
 
 
-
     public static void main(String[] args) {
+        Student stud = new Student();
+        stud.setName("Дуйшон");
+        stud.setJaw(38);
+        stud.setGroup("java - 5");
+        System.out.println(stud.getName()+" "+stud.getJaw()+" "+stud.getGroup());
 
-        Nout nout = new Nout();
-        nout.setName("lenovo");
-        nout.setColour("krasnyi");
-        nout.setMemory(512);
-        nout.setCpu("windows");
-        System.out.println(nout.getName()+" "+nout.getCpu()+" "+nout.getColour()+" "+nout.getMemory() +" гб");
-
-        Nout.vkl();
-        Nout.otkl();
-
-
-
+        stud.study();
+        stud.play();
 
 
     }
